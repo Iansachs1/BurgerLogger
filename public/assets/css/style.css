@@ -1,19 +1,44 @@
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+}
+
+.titleHead {
+  text-align: center;
 }
 
 .label {
   font-weight: bold;
 }
 
+.createBurger {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+body {
+  background: darkgrey;
+}
+
 .create-update-form {
   padding: 5px;
   margin: 5px;
-  background: aqua;
+  background: darkgrey;
 }
 
 .form-group {
   margin-bottom: 5px;
+}
+
+.change-eaten {
+  border: solid 1px;
+  border-radius: 15px;
+  background: darkgrey;
+}
+
+.delete-burger {
+  border: solid 1px;
+  border-radius: 15px;
+  background: darkgrey;
 }

@@ -1,11 +1,17 @@
-<li class="burger-list">
-	{{name}}
+<li class="burger-list list-group-item">
+	<h5>
+		{{name}}
 
+	<span>
 	{{#if eaten}}
-	<button class="change-eaten" data-id="{{id}}" data-neweaten="{{eaten}}">
-		Nom Nom Nom
+	<button class="change-eaten btn btn-secondary" data-id="{{id}}" data-neweaten="{{eaten}}">
+		Eat
 	</button>
 	{{/if}}
 
-	<button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
+	<button class="delete-burger btn btn-secondary" data-id="{{this.id}}">Delete</button>
+
+	</span>
+	</h5>
+
 </li>

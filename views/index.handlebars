@@ -1,37 +1,47 @@
 <h1 class="titleHead">Eat some burgers</h1>
 
+<div class="burgerImageContainer">
+  <img class="burgerImage" src="/assets/images/burger.jpg" alt="picture of burger">
+</div>
+
 
 <div class="container">
   <div class="row">
-    <div class="col-md-6">
-      <h2>Eat these burgers!</h2>
+
+    <div class="col-md-6 card">
+      <h2 class="card-header">Eat these burgers!</h2>
+      <div class="card-body">
 
 
-    <i class="fas fa-hamburger"></i>
+        <div class="card-text">
+          <ul class="burgerList list-group list-group-flush">
+            {{#each burgers}}
+            {{#unless eaten}}
+            {{> burgers/burger-block eaten=true}}
+            {{/unless}}
+            {{/each}}
+          </ul>
+        </div>
 
-
-
-      <ul>
-        {{#each burgers}}
-        {{#unless eaten}}
-        {{> burgers/burger-block eaten=true}}
-        {{/unless}}
-        {{/each}}
-      </ul>
-
+      </div>
     </div>
 
-    <div class="col-md-6">
+    <div class="col-md-6 card">
 
-      <h2>Eaten Burgers</h2>
+      <h2 class="card-header">Eaten Burgers</h2>
+      <div class="card-body">
+        <div class="card-text">
+          <ul class="burgerList list-group list-group-flush">
+            {{#each burgers}}
+            {{#if eaten}}
+            {{> burgers/burger-block eaten=false}}
+            {{/if}}
+            {{/each}}
+          </ul>
 
-      <ul>
-        {{#each burgers}}
-        {{#if eaten}}
-        {{> burgers/burger-block eaten=false}}
-        {{/if}}
-        {{/each}}
-      </ul>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -42,11 +52,10 @@
       <form class="create-form">
 
         <div class="form-group">
-          <label for="ca">Burger Name:</label>
-          <input type="text" id="ca" name="name">
+          <br>
+          <textarea type="text" id="ca" name="name" rows="4" placeholder="Add the name of your burger here"></textarea>
         </div>
-
-        <button type="submit">Add Burger</button>
+        <button class="btn btn-secondary" type="submit">Add Burger</button>
       </form>
     </div>
   </div>

@@ -1,6 +1,6 @@
 li {
-  padding: 5px;
-  margin: 5px;
+  padding: 2px;
+  margin: 2px;
 }
 
 .titleHead {
@@ -31,14 +31,12 @@ body {
   margin-bottom: 5px;
 }
 
-.change-eaten {
-  border: solid 1px;
-  border-radius: 15px;
-  background: darkgrey;
+.burgerList {
+  list-style-type: none;
 }
-
-.delete-burger {
-  border: solid 1px;
-  border-radius: 15px;
-  background: darkgrey;
+.burgerImageContainer{
+  text-align: center;
+}
+.burgerImage {
+  height: 300px;
 }

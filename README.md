@@ -14,7 +14,7 @@ The burger logger is an application using mysql, express, and handlebars that al
   
 ## Image
   
-![Burger Site](https://github.com/Iansachs1/BurgerLogger/images/BurerSite.png)
+![Burger Site](https://github.com/Iansachs1/BurgerLogger/blob/main/images/BurgerSite.png)
   
 ## Usage
   
